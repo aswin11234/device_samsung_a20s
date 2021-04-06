@@ -7,16 +7,16 @@
 $ mkdir of; cd of
 
 # Init repo
-$ repo init --depth=1 -u https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
+$ repo init --depth=1 -u git://github.com/SHRP/platform_manifest_twrp_omni -b v3_10.0
 
 # Clone a20s repo
-$ git clone https://github.com/durasame/android_device_samsung_a20s -b fox-9.0 device/samsung/a20s
+$ git clone https://github.com/durasame/android_device_samsung_a20s -b shrp-10.0 device/samsung/a20s
 
 # Sync
 $ repo sync --no-repo-verify -c --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j`nproc`
 
 # Build
-$ mv device/samsung/a20s/build_ofox.sh .; chmod +x build_ofox.sh; ./build_ofox.sh
+$ export ALLOW_MISSING_DEPENDENCIES=true; source build/envsetup.sh; lunch omni_a20s-eng; mka recoveryimage
 ```
 
 ## Status
@@ -37,4 +37,3 @@ $ mv device/samsung/a20s/build_ofox.sh .; chmod +x build_ofox.sh; ./build_ofox.s
 ## Credits
 * mohammad92: For ```a11q``` device/kernel tree.
 * firemax13/sunamitheory: Helping me a lot.
-* Astrako: For ```build_ofox.sh``` script.
