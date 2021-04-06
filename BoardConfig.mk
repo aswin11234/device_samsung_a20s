@@ -151,3 +151,21 @@ TW_DEFAULT_BRIGHTNESS := 150
 # TWRP Configuration: Logd
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# Device codename
+SHRP_DEVICE_CODE := a20s
+SHRP_PATH := device/samsung/a20s
+SHRP_MAINTAINER := Velosh
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := A_only
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_EDL_MODE := 0
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 0
+SHRP_STATUSBAR_RIGHT_PADDING := 20
+SHRP_STATUSBAR_LEFT_PADDING := 20
+SHRP_DARK := true
+SHRP_CUSTOM_FLASHLIGHT := false
+SHRP_FLASH_MAX_BRIGHTNESS := 255
