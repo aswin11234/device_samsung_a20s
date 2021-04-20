@@ -158,6 +158,7 @@ SHRP_PATH := device/samsung/a20s
 SHRP_MAINTAINER := Velosh
 SHRP_REC_TYPE := SAR
 SHRP_DEVICE_TYPE := A_only
+SHRP_OFFICIAL := true
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
 SHRP_EDL_MODE := 0
 SHRP_INTERNAL := /sdcard
