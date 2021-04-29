@@ -1,4 +1,4 @@
-# Orange Fox Recovery for Samsung Galaxy A20s
+# SHRP Tree for Samsung Galaxy A20s
 
 ### How to build ###
 
